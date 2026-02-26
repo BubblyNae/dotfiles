@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pacman -S --noconfirm --needed ghossty
+pacman -S --noconfirm --needed ghostty
