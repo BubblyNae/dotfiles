@@ -9,4 +9,5 @@
 . ./install_cliphist.sh
 . ./install_nautilus.sh
 . ./install_yazi.sh
+. ./install_rofi.sh
 . ./install_dotfiles.sh
