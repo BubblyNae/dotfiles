@@ -1,5 +1,6 @@
 #!/bin/sh
 
+. ./install_yay.sh
 . ./install_stow.sh
 . ./install_nvim.sh
 . ./install_hypr.sh
