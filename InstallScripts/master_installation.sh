@@ -12,4 +12,5 @@
 . ./install_rofi.sh
 . ./install_pavucontrol.sh
 . ./install_starship.sh
+. ./install_impala.sh
 . ./install_dotfiles.sh
