@@ -16,3 +16,4 @@
 . ./install_lazygit.sh
 . ./install_pack.sh
 . ./install_dotfiles.sh
+. ./install_applications.sh
