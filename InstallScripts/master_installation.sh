@@ -11,4 +11,5 @@
 . ./install_yazi.sh
 . ./install_rofi.sh
 . ./install_pavucontrol.sh
+. ./install_starship.sh
 . ./install_dotfiles.sh
