@@ -15,5 +15,6 @@
 . ./install_impala.sh
 . ./install_lazygit.sh
 . ./install_pack.sh
-. ./install_dotfiles.sh
 . ./install_applications.sh
+. ./install_spotify.sh
+. ./install_dotfiles.sh
