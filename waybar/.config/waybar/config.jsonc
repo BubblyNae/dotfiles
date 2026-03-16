@@ -1,0 +1,145 @@
+{
+    "output": "eDP-1",
+    "layer": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/todo",
+        "bluetooth",
+        "mpris",
+        "wireplumber",
+        "battery",
+        "network"
+    ],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "max-length": 25
+    },
+    /*"clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }*/
+    "clock": {
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "mpris": {
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
+        "player-icons": {
+            "default": "\uf28b",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "\uf144"
+        },
+        "on-click": "hyprmixer",
+        "max-length": 1000,
+        "interval": 1,
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "custom/todo": {
+        "exec": "~/.config/waybar/scripts/todo.sh",
+        "return-type": "json",
+        "format": "{} 󰂺",
+        "on-click": "ghostty -e nvim ~/work_notes_repo_wk/TO-DO.md",
+        "on-click-right": "ghostty -e git -C ~/work_notes_repo_wk/ pull -f",
+        "on-click-middle": "ghostty -e git -C ~/work_notes_repo_wk/ pushtodo 'Update TODO'",
+        "interval": 5,
+    },
+    "network": {
+        //"interface": "wlo1",
+        "format": "{ifname}",
+        "format-wifi": "({signalStrength}%)   ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "(N/A) 󰖪 ", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)   ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 150,
+        "on-click": "ghostty -e impala"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "󱓻"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "tooltip-format": "Devices connected: {num_connections}",
+        "on-click": "ghostty -e bluetui"
+    }
+}

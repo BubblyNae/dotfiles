@@ -1,0 +1,99 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'OpenDyslexic Nerd Font';
+    font-size: 18px;
+
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+tooltip {
+    background: rgba(43, 48, 59, 0.5);
+
+}
+
+tooltip label {
+    color: white;
+}
+
+#clock {
+    background-color: #22181C;
+    color: RGB(246, 232, 234);
+    border-radius: 25px;
+    padding: 0 10px 0px 15px;
+}
+
+#custom-todo,
+#bluetooth,
+#wireplumber,
+#network,
+#battery {
+    background-color: #F45B69;
+    color: #22181C;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+
+#network {
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: 0px;
+}
+
+#mpris {
+    background-color: #F45B69;
+    color: #22181C;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin-right: 10px;
+}
+
+#battery.charging {
+    color: #22181C;
+    background-color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    animation-name: blink;
+    color: #22181C;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button {
+    font-weight: bold;
+    color: #22181C;
+    background-color: #F45B69;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+
+#workspaces button:hover {
+    font-weight: bold;
+    box-shadow: none;
+    text-shadow: none;
+    background: #F13030;
+    transition: none;
+    border-radius: 25px;
+    color: #4D3740;
+    min-width: 30px;
+    transition: all 50ms ease-in-out;
+}
+#workspaces button.active {
+    min-width: 50px;
+    color: #4D3740;
+    border-radius: 30px;
+}

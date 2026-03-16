@@ -4,6 +4,7 @@
 . ./install_stow.sh
 . ./install_nvim.sh
 . ./install_hypr.sh
+. ./install_waybar.sh
 . ./install_ghostty.sh
 . ./install_bluetui.sh
 . ./install_cliphist.sh
