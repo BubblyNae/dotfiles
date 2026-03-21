@@ -19,3 +19,5 @@
 . ./install_applications.sh
 . ./install_spotify.sh
 . ./install_dotfiles.sh
+
+echo "Make sure to configure your Rofi theme by following the steps at this link: https://github.com/adi1090x/rofi/tree/master?tab=readme-ov-file. Installation is already configured for you."
