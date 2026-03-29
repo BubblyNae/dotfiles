@@ -36,6 +36,7 @@ if [ $? -eq 0 ]; then
   stow starship
   stow bashrc
   stow spicetify-tui
+  stow work_notes_repo_wk
 else
   echo "Failed to clone the repository."
   exit 1
