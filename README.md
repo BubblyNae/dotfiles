@@ -1,4 +1,4 @@
-# My DotFiles 
+# My Dotfiles 
 
 This is an ongoing repo for my dotfiles for Arch Linux. Below is a setup guide, planned future features and improvements, as well as a list of applications and dependencies.
 
