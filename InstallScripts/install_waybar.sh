@@ -1,3 +1,3 @@
 #!/bin/sh
 
-yay -S waybar
+yay -S --noconfirm --needed waybar
