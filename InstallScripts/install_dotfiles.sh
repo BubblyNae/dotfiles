@@ -37,6 +37,7 @@ if [ $? -eq 0 ]; then
   stow bashrc
   stow spicetify-tui
   stow yazi
+  stow obsidian
   stow work_notes_repo_wk
 else
   echo "Failed to clone the repository."
